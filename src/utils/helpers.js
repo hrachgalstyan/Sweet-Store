@@ -4,7 +4,7 @@ import url from './URL'
 export function flattenProducts(data) {
     return data.map(item => {
         // cloudinary
-        let image = `${url}${item.image.url}`;
+        let image = (`${url}${item.image.url}`) || null;
         return {
             ...item,
             image

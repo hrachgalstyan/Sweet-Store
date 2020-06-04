@@ -30,7 +30,7 @@ function CartProvider({children}){
         newTotal = parseFloat(newTotal.toFixed(2));
         setTotal(newTotal);
     }, [cart]);
- 
+
     // remove item
     const removeItem = id => {
         dispatch({ type: REMOVE, payload: id });

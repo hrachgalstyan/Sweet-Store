@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 export default function Product({ image, title, id, price}) {
   return <article className="product">
@@ -15,3 +16,10 @@ export default function Product({ image, title, id, price}) {
     </div>
   </article>
 }
+
+Product.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired
+};
