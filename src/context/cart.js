@@ -45,7 +45,7 @@ function CartProvider({children}){
         //     return item.id === id? {...item, amount: item.amount + 1} : {...item}
         // });
         // setCart(newCart);
-    }
+    } 
     // decrease amount
     const decreaseAmount = (id, amount) => {
         if( amount === 1){
