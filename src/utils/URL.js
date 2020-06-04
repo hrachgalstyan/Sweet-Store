@@ -1,2 +1,2 @@
 // url
-export default "https://strawberries-store-api.herokuapp.com";
+export default "http://localhost:1337";

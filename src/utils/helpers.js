@@ -4,7 +4,7 @@ import url from './URL'
 export function flattenProducts(data) {
     return data.map(item => {
         // cloudinary
-        let image = (`${url}${item.image.url}`) || null;
+        let image = (`${url}${item.image.url}`);
         return {
             ...item,
             image
@@ -19,7 +19,7 @@ export function featuredProducts(data) {
 }
 
 export function paginate(products) {
-    const itemsPerPage = 4;
+    const itemsPerPage = 8;
     const numberOfPages = Math.ceil(products.length / itemsPerPage);
     // const newProducts = Array.from({ length: numberOfPages }, (_, index) => {
     //   return products.splice(0, itemsPerPage);
